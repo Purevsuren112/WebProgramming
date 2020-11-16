@@ -1,0 +1,414 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box
+}
+/*custom properties*/
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light-bg:#fff;
+    --clr-dark-bg:#303030;
+    --clr-accent:#999BAE;
+    --clr-text1:#6C444C;
+    --clr-text2:#6FC7D5;
+    --clr-text3:#00FFFF;
+
+    --fs-h1:3rem;
+    --fs-h2:2.30rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+
+    --boxShadow: 0.5em 0.5em .75em rgba(0,0,0,.25);
+}
+
+@media (min-width:900px){
+    :roor{
+        --fs-h1:4.5rem;
+        --fs-h2:3.75rem;
+        --fs-h3:1.55rem;
+        --fs-body:1.15rem;
+    }
+}
+
+/*General Styles*/
+body{
+    background-color: var(--fs-body);
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/*Typograhpy*/
+h1,h2,h3{
+    line-height: 1.1;
+    margin:0;
+}
+h1{ font-size: var(--fs-h1)}
+h2{ font-size: var(--fs-h2)}
+h3{ font-size: var(--fs-h3)}
+
+.section_intro-title{
+    margin:0;
+    color:var(--clr-text1);
+}
+.section_subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+section{
+    padding: 5em 2em;
+}
+.section_intro-subtitle,
+.section_about-title,
+.section_Past_projects-title{
+    background-color: var(--clr-accent);
+    color: var(--clr-text1);
+    margin-bottom:1em ;
+    padding: .75em;
+}
+
+
+/*Intro section*/
+.intro{
+    position: relative;
+}
+@media(min-width: 600px){
+    .intro{
+        display:grid;
+        width:min-content;
+        margin:0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: "img title" "img subtitle";
+        grid-template-columns:min-content max-content;
+    }
+    .intro_image{
+        grid-area:img;
+        min-width: 300px;
+        position: relative;
+        z-index: 2;
+        box-shadow:var(--boxShadow);
+    }
+    .section_intro-subtitle{
+        align-self: start;
+        grid-column: -1/1;
+        grid-row:2;
+        text-align:right;
+        position: relative;
+        left: -1.6em;
+        width: calc(100% + 1.6em);
+    }
+/*Skills section*/
+
+.section_skills{
+    background-color:var(--clr-accent);
+    background-image:url(../images/guyCoding.jpg);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.section_skills-title{
+    color:	#00FFFF;
+    position: relative;
+    margin-bottom:1em;
+}
+.individual_skills-java,
+.individual_skills-CSh,
+.individual_skills-RDB{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+@media (min-width: 600px){
+    .skills{
+        display :flex;
+        max-width: 500px;
+        margin: 0;
+    }
+
+}
+.btn_pastp{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-text2);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_pastp:hover{
+    transform: scale(1.2);
+}
+/*Portfolio*/
+
+.section_Past_projects{
+    text-align:center;
+    background-color:var(--clr-light-bg);
+    position: relative;
+    margin: 0 auto;
+    max-width: 1500px;
+
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.portfolio-item {
+    background: var(--clr-light-bg);
+    overflow:hidden;
+}
+
+.portfolio-item:hover{
+   transform: scale(1.2);
+   
+}
+
+.portfolio-item{
+    transition:transform 300ms ease-in-out;
+    opacity: 250ms linear;
+}
+/*Footer*/
+.footer{
+    text-align:center;
+    font-size: 1.5em;
+}
+
+/*Projects*/
+
+.project1{
+    background-color:var(--clr-accent);
+    background-image:url(../images/Apex.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+h3{font-size: 2em;}
+.Project1-part1,
+.Project1-part2,
+.Project1-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    
+}
+.section_project1-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;
+}
+.btn_apex{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_apex:hover{
+    transform: scale(1.2);
+}
+.project2{
+    background-color:var(--clr-accent);
+    background-image:url(../images/Spotify.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.Project2-part1,
+.Project2-part2,
+.Project2-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section_project2-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;
+}
+.btn_spotify{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_spotify:hover{
+    transform: scale(1.2);}
+.project3{
+    background-color:var(--clr-accent);
+    background-image:url(../images/Reddit.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.Project3-part1,
+.Project3-part2,
+.Project3-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section_project3-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;
+}
+.btn_reddit{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_reddit:hover{
+    transform: scale(1.2);}
+.project4{
+    background-color:var(--clr-accent);
+    background-image:url(../images/GitHub-Mark.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.Project4-part1,
+.Project4-part2,
+.Project4-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section_project4-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;
+
+}
+.btn_github{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_github:hover{
+    transform: scale(1.2);}
+.project5{
+    background-color:var(--clr-accent);
+    background-image:url(../images/download.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.Project5-part1,
+.Project5-part2,
+.Project5-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section_project5-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;
+}
+.btn_discord{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+
+}
+.btn_discord:hover{
+    transform: scale(1.2);}
+.project6{
+    background-color:var(--clr-accent);
+    background-image:url(../images/Dota_2_Logo-700x541.png);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.Project6-part1,
+.Project6-part2,
+.Project6-part3{
+    padding: 1em;
+    color:#fff;
+    position:relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section_project6-title{
+    color:#fff;
+    position: relative;
+    margin-bottom:2em;}
+.btn_dota2{
+    display: inline-block;
+    padding: .75em 1.5em;
+    background: var(--clr-light-bg);
+    color:var(--clr-text1);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+}
+.btn_dota2:hover{
+    transform: scale(1.2);
+}
+}
