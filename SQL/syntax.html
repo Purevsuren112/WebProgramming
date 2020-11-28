@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    margin: 25px;
+    background-color: rgb(201, 197, 197);;
+}
+.sql_syntax_section{
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px -7px rgba(50, 50, 50, 0.75);
+}
+
+</style>
+<body>
+<h1>Here are some Syntax for SQL commands</h1>
+<section>
+    <h2>The <strong>SELECT</strong> statemetn</h2>
+    <div class="sql_syntax_section">
+        <p>The <strong>SELECT</strong> statement is used to select data from a database.
+            The data returned is stored in a result table, called the result-set.
+        </p>
+        Here is some syntax:
+        <br>
+        <pre>
+            SELECT column1, column2, ...
+            FROM table_name;
+        </pre>
+        <p>if you want to select all the fields available in the table, use the following syntax:</p>
+        <pre>
+            SELECT * FROM table_name; 
+        </pre>
+    </div>
+</section>
+<h2>The <strong>UPDATE</strong> statement</h2>
+<section>
+    <div class = "sql_syntax_section">
+        <p>The <strong>UPDATE</strong> statement is used to modify the existing records in a table.</p>
+        Here is some syntax:
+        <pre>
+            UPDATE table_name
+            SET column1 = value1, column2 = value2, ...
+            WHERE condition;
+        </pre>
+        <p>
+            Be careful when updating records in a table! Notice the <strong>WHERE</strong> clause in the <strong>UPDATE</strong> statement. The <strong>WHERE</strong> clause specifies which record(s) that should be updated. 
+            If you omit the <strong>WHERE</strong> clause, all records in the table will be updated! 
+        </p>
+    </div>
+
+</section>
+<h2>The <strong>DELETE</strong> statement</h2>
+<section>
+    <div class="sql_syntax_section">
+        <p>
+            The <strong>DELETE</strong> statement is used to delete existing records in a table.
+        </p>
+        Here is some syntax:
+        <pre>
+            DELETE FROM table_name WHERE condition; 
+        </pre>
+        <p>
+            Be careful when deleting records in a table! Notice the <strong>WHERE</strong> clause in the <strong>DELETE</strong> statement. The <strong>WHERE</strong> clause specifies which record(s) should be deleted. 
+            If you omit the <strong>WHERE</strong> clause, all records in the table will be deleted!
+        </p>
+
+    </div>
+
+</section>
+
+<h2>The <strong>INSERT INTO</strong> statement</h2>
+<section>
+    <div class = "sql_syntax_section">
+        <p>
+            The <strong>INSERT INTO</strong> statement is used to insert new records in a table.
+        </p>
+        Here is some syntax:
+        <pre>
+        INSERT INTO table_name (column1, column2, column3, ...)
+        VALUES (value1, value2, value3, ...);
+        </pre>
+    </div>
+</section>
+<h2>The <strong>CREATE TABLE</strong> statement</h2>
+<section>
+<div class = "sql_syntax_section">
+    <p>The <strong>CREATE TABLE</strong> statement is used to create a new table in a database.</p>
+    Here is some syntax:
+    <pre>
+    CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+    </pre>
+
+    <p>
+        The column parameters specify the names of the columns of the table.
+
+The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).
+    </p>
+</div>
+</section>
+<h2>The <strong>ALTER TABLE</strong> statement</h2>
+<section>
+    <div class= "sql_syntax_section">
+        <p>The <strong>ALTER TABLE</strong> statement is used to add, delete, or modify columns in an existing table.</p>
+        Here is some syntax:
+        <br>
+        <br>To add a column:
+        <pre>
+            ALTER TABLE table_name
+            ADD column_name datatype;
+        </pre>
+        <br> To drop a column:
+        <pre>
+            ALTER TABLE table_name
+            DROP COLUMN column_name;
+        </pre>
+        <br> To change a column:
+        <pre>
+            ALTER TABLE table_name
+            ALTER COLUMN column_name datatype;
+        </pre>
+    </div>
+</section>
+<h2>The <strong>DROP TABLE</strong> statement</h2>
+<section>
+    <div class = "sql_syntax_section">
+        <p>The <strong>DROP TABLE</strong> statement is used to drop an existing table in a database.</p>
+        Here is some syntax:
+        <pre>
+            DROP TABLE table_name;  
+        </pre>
+        <p><strong>Be careful before dropping a table. Deleting a table will result in loss of complete information stored in the table!</strong></p>
+
+    </div>
+</section>
+</body>
+
+</html>
