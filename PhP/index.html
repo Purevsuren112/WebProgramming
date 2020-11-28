@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    margin: 25px;
+    background-color: rgb(201, 197, 197);;
+}
+
+.php_section {
+	background: white;
+    /*display: inline-block;*/
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px -7px rgba(50, 50, 50, 0.75);
+}
+</style>
+<body>
+<h1>PHP Basics</h1>
+<section>
+<h2>How to display variable?</h2>
+<div class="php_section"> 
+  <p>We can display variable as follows:</p>
+  <div style="width:700px;overflow:auto">
+  <pre><strong>
+&lt;?php
+
+  $var = "String";
+  echo "&lt;b&gt;".$var . "&lt;br&gt;";
+
+?&gt;
+</pre>
+  </div>
+</strong>
+    where <strong>&dollar;var</strong> is the name of variable.
+</div>
+</section>
+
+<section>
+<h2>Arrays in PHP</h2>
+<div class="php_section">
+ <p> In PHP, there are three types of arrays:
+    
+<br><strong>Indexed arrays</strong> - Arrays with a numeric index
+<br><strong>Associative arrays</strong>  - Arrays with named keys
+<br><strong>Multidimensional arrays</strong> - Arrays containing one or more array 
+<br>
+<a href = "array.html" target="_blank" >Here is a list of all the functions an array can do</a>
+   
+    
+
+   
+</p>
+</div>
+</section><!--End of array-->
+
+
+<h3>Loops in PhP</h3>
+<section>
+   
+    <div class = "php_section">
+        
+        <p>
+Often when you write code, you want the same block of code to run over and over again a certain number of times. So, instead of adding several almost equal code-lines in a script, we can use loops.
+Loops are used to execute the same block of code again and again, as long as a certain condition is true.
+<br>
+<br>In PHP, we have the following loop types:
+<br><strong>while</strong> - loops through a block of code as long as the specified condition is true.
+<br><strong>do...while</strong> - loops through a block of code once, and then repeats the loop as long as the specified condition is true.
+<br><strong>for</strong> - loops through a block of code a specified number of times.
+<br><strong>foreach</strong> - loops through a block of code for each element in an array.
+<br>
+<a href ="loops.html" target="_blank">Here is an example of loops in php.</a>
+  
+
+    </div>
+</section><!--End of loop-->
+
+
+<section><!--Switch section-->
+    <h4>Switch statement in PhP</h4>
+    <div class = "php_section">
+        <p>
+                The switch statement can be used to select on of many blocks of code to be executed.
+            <br>
+            <br>A single value is evaluated at the start of the switch statement and compared with the values of each case. <strong>Only the case that has a matching value will be executed.</strong>
+            <br>The <strong>break</strong> statement is used to prevent the switch loop from running code from case to case. And the <strong>default</strong> statement is used incase there are no matches to our cases.
+            <br>Here is some sample syntax:
+<div style="width:350px;overflow:auto">
+<pre>
+    switch (n) {
+        case label1:
+          code to be executed if n=label1;
+          break;
+        case label2:
+          code to be executed if n=label2;
+          break;
+        case label3:
+          code to be executed if n=label3;
+          break;
+          ...
+        default:
+          code to be executed if n is different from all labels;
+      }
+</pre>
+</div>
+            <br>And here is an example:
+<br>
+<div style="width:350px;overflow:auto">
+<pre>
+    &lt?php
+    $favcolor = "red";
+    
+    switch ($favcolor) {
+      case "red":
+        echo "Your favorite color is red!";
+        break;
+      case "blue":
+        echo "Your favorite color is blue!";
+        break;
+      case "green":
+        echo "Your favorite color is green!";
+        break;
+      default:
+        echo "Your favorite color is neither red, blue, nor green!";
+    }
+    ?> 
+</pre>
+</div>
+
+
+        </p>
+    </div>
+
+</section>
+
+
+</section>
+</body>
+</html>
