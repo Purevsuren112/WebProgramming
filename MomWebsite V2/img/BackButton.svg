@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53.381" viewBox="0 0 53 53.381">
+  <g id="BackButton" transform="translate(-17 -37.619)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="26.5" cy="26.5" r="26.5" transform="translate(17 38)" fill="#fff"/>
+    <g id="reply-24px" transform="translate(20 37.619)">
+      <path id="Path_16" data-name="Path 16" d="M0,0H46.381V46.381H0Z" fill="none"/>
+      <path id="Path_17" data-name="Path 17" d="M16.528,12.73V5L3,18.528,16.528,32.056V24.132c9.663,0,16.427,3.092,21.258,9.856C35.854,24.326,30.056,14.663,16.528,12.73Z" transform="translate(2.798 4.663)" fill="#4367f6"/>
+    </g>
+  </g>
+</svg>

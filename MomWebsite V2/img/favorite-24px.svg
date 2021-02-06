@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62.802" height="53.556" viewBox="0 0 62.802 53.556">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_6" data-name="Path 6" d="M33.4,56.556,28.848,52.7C12.676,39.074,2,30.085,2,19.052,2,10.063,9.6,3,19.271,3A19.416,19.416,0,0,1,33.4,9.1,19.416,19.416,0,0,1,47.532,3C57.2,3,64.8,10.063,64.8,19.052c0,11.032-10.676,20.022-26.848,33.681Z" transform="translate(-2 -3)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="favorite-24px" transform="translate(7.051 0.04)">
+    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-7.051 -0.04)" clip-path="url(#clip-path)">
+      <g id="local_hospital-24px" transform="translate(3.355)">
+        <path id="Path_11" data-name="Path 11" d="M0,0H56.093V53.556H0Z" fill="none"/>
+        <path id="Path_12" data-name="Path 12" d="M40.44,3.044H7.719A4.565,4.565,0,0,0,3.068,7.507L3.044,38.749a4.586,4.586,0,0,0,4.674,4.463H40.44a4.586,4.586,0,0,0,4.674-4.463V7.507A4.586,4.586,0,0,0,40.44,3.044ZM38.1,27.591H28.754v8.926H19.4V27.591H10.056V18.665H19.4V9.739h9.349v8.926H38.1Z" transform="translate(3.967 3.65)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
